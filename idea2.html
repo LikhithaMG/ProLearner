@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Login</title>
+    <style>
+        body{
+            background-color: rgb(227, 245, 245);
+        }
+        h1{
+            background-color:rgb(139, 223, 223) ;
+            height:60px;
+            margin-top:0px;
+            border-bottom:2px solid black;
+            border-radius:20px;
+            padding-top:20px;
+        }
+        .div1{
+            height:350px;
+            width:100%;
+            background-color:  rgb(177, 237, 237);
+            border:2px solid black;
+            border-radius:20px;
+        }
+        #button{
+            height:40px;
+            width:150px;
+            background-color: rgb(128, 246, 246);
+            font-size: 20px;
+        }
+        .div2{
+            margin-top:50px;
+        }
+       #next{
+        height:40px;
+            width:120px;
+            font-size:25px;
+            background-color:rgb(139, 223, 223);
+       }
+      
+    </style>
+</head>
+<body>
+    <center><div class="div1">
+        <h1>SCHOOL LOGIN</h1><br><br>
+        <form action="info.html">
+            UDISE_CODE <input id="one" type="text" maxlength="11" placeholder="01234567890" required><br><br><br><br>
+            PASSWORD <input id="two" type="password" maxlenght="20" required><br><br><br>
+            <input type="submit" id="button" value="LOGIN">
+    </div><br><br>
+    </form>
+    </center>
+        
+<script>
+  function onclick(page){
+            document.location=page;
+        }
+</script>
+</body>
+</html>
