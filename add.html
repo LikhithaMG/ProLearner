@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <style>
+        body{
+    background-color: rgb(227, 245, 245);
+        }
+        #project,#activity,#experiment,#add{
+            height:30px;
+            width:150px;
+            font-size:20px;
+        }
+        .div1,.div2,.div3{
+            height:500px;
+            width:600px;
+            background-color:rgb(240, 234, 234);
+            border: 1px solid black;
+            
+        }
+        #button1,#button2,#button3{
+            height:30px;
+            width:120px;
+            background-color: rgb(128, 246, 246);
+            font-size: 20px;
+        }
+        #view,#add{
+            height:40px;
+            width:120px;
+            font-size:25px;
+            background-color:rgb(139, 223, 223) ;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>ADD SECTION</h1>
+    <h3 id="option">Select any one</h3>
+  <button style="height:30px;width:120px;"><a href="#act">ACTIVITY</a></button>
+  <button style="height:30px;width:120px;"><a href="#pro">PROJECT</a></button> 
+    <button style="height:30px;width:120px;"><a href="#exp">EXPERIMENT</a></button>   
+    <br><br><br>
+    <div class="div1" id="act">
+        <form action="view.html">
+            ACTIVITY NO <input type="text" style="margin-top:30px;" required><br><br><br>
+            ACTIVITY NAME <input type="text" required><br><br><br>
+            DESCRIPTION <textarea name="" id="" cols="30" rows="10"></textarea><br><br><br>
+            PHOTOS <input type="file" required><br><br><br>
+            VEDIOS <input type="file"><br><br>
+            <input type="submit" value="ADD" id="button1"></form>
+            </div>
+    <div class="div2" id="pro"style="margin-top:50px;">
+        <form action="view.html">
+            PROJECT NO <input type="text" style="margin-top:30px;" required><br><br><br>
+            PROJECT NAME <input type="text" required><br><br><br>
+            DESCRIPTION <textarea name="" id="" cols="30" rows="10"></textarea><br><br><br>
+            PHOTOS <input type="file" required><br><br><br>
+            VEDIOS <input type="file"><br><br>
+            <input type="submit" value="ADD" id="button2"></form>
+            </div>
+    <div class="div3"  id="exp" style="margin-top:50px;">
+        <form action="view.html">
+            EXPERIMENT NO <input type="text" style="margin-top:30px;" required><br><br><br>
+            EXPERIMENT NAME <input type="text" required><br><br><br>
+            DESCRIPTION <textarea name="" id="" cols="30" rows="10"></textarea><br><br><br>
+            PHOTOS <input type="file" required><br><br><br>
+            VEDIOS <input type="file"><br><br>
+            <input type="submit" value="ADD" id="button3">
+        </form>
+        </div>
+    <script>
+        function onclick(page){
+            document.location=page;
+        }
+    </script>
+</center>
+</body>
+</html>
